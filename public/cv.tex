@@ -1,0 +1,279 @@
+\documentclass[10pt, oneside]{article}
+\usepackage{geometry}
+
+%\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{changepage} 
+\usepackage[pdftex]{graphicx}
+\usepackage{multicol}
+\usepackage{ gensymb }
+\usepackage[english,spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem} 
+\setlist{leftmargin=3mm}
+
+\usepackage{dcolumn}
+
+\makeatletter 
+
+\newlength\tdima
+\newcommand\tabfill[1]{%
+      \setlength\tdima{\linewidth}%
+      \addtolength\tdima{\@totalleftmargin}%
+      \addtolength\tdima{-\dimen\@curtab}%
+      \parbox[t]{\tdima}{#1\ifhmode\strut\fi}}
+
+\newcommand\mytabs{\hspace*{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}}
+\newenvironment{mysec}[1][\mytabs]
+  {\begin{tabbing}#1\kill\ignorespaces}
+  {\end{tabbing}}
+ 
+\makeatother
+  
+\usepackage{titlesec}
+
+\newcommand{\lyxrightaddress}[1]{
+\par {\raggedleft \begin{tabular}{l}\ignorespaces
+#1
+\end{tabular}
+\vspace{1.4em}
+\par}
+}
+
+\geometry{letterpaper}
+\geometry{verbose,tmargin=1.3cm,bmargin=1.3cm,lmargin=1.2cm,rmargin=1.2cm}
+% Activate to surpress page number on first page:
+\thispagestyle{empty}
+
+\usepackage{soul}
+\usepackage{times}
+
+\usepackage{ifthen,xcolor}
+\newlength{\tabcont}
+\newcommand{\tab}[1]{%
+\settowidth{\tabcont}{#1}%
+\ifthenelse{\lengthtest{\tabcont < .25\linewidth}}%
+{\makebox[.25\linewidth][l]{#1}\ignorespaces}%
+}%
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=black}
+ 
+\urlstyle{same}
+
+\usepackage{titlesec}
+\titleformat{\subsection}
+  {\large\scshape\bfseries}
+  {\thesubsection}{1em}{}
+
+\setlength{\columnsep}{0pt}
+\hypersetup{
+     colorlinks   = true,
+     urlcolor    = blue
+}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{gobble}
+
+\begin{center}
+
+\begin{picture}(1000,1)
+    \put(0,-20){\includegraphics[width=\textwidth]{img/formalheader.png}}
+\end{picture}
+
+\vspace{10mm}
+{ University of California, Berkeley \hfill Department of Agricultural and Resource Economics} \\\hrule  \vspace{10mm}
+{\Large \textbf{Jacob Lefler}} \\
+\end{center} 
+
+%%% CONTACT INFORMATION
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Contact \\ Information}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+Giannini Hall 236, UC Berkeley \\
+\href{mailto:jacob_lefler@berkeley.edu}{jacob\_lefler@berkeley.edu} \\
+\href{https://jacoblefler.github.io/}{jacoblefler.github.io} \\
++1-(832)-919-5847
+\end{minipage}\vspace{5mm}
+
+%%% DOCTORAL STUDIES
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Doctoral Studies}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+University of California, Berkeley\\
+PhD, Agricultural and Resource Economics (Expected May 2026) \\
+~\\ 
+\textsc{Primary Fields:} International Trade, Spatial Economics \\
+\textsc{Secondary Fields:} Agricultural Economics, Environmental Economics \\
+\vspace{0.3cm} 
+\end{minipage}
+
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{References}
+\end{minipage}\hspace{0.04\linewidth}
+\begin{minipage}[t]{0.3\linewidth}
+\begin{itemize}[noitemsep,nolistsep]
+\item[] \underline{Associate Professor Thibault Fally} \\
+\href{mailto:fally@berkeley.edu}{fally@berkeley.edu} \\ 
+Department of Agricultural
+\item[] \hspace{4mm} \& Resource Economics \\
+\item[] \underline{Professor Andr\'es Rodr\'iguez-Clare} \\
+\href{mailto:arc@berkeley.edu}{arc@berkeley.edu} \\
+Department of Economics
+\end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.4\linewidth}
+\begin{itemize}[noitemsep,nolistsep]
+    \item[] \underline{Assistant Professor Kirill Borusyak} \\
+\href{k.borusyak@berkeley.edu}{k.borusyak@berkeley.edu} \\ 
+Department of Agricultural
+\item[] \hspace{4mm} \& Resource Economics
+\end{itemize}
+\end{minipage}\vspace{5mm}
+
+%%% PLACEMENT OFFICERS
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Placement\\ Officers}
+\end{minipage}\hspace{0.04\linewidth}
+\begin{minipage}[t]{0.9\linewidth}~\vspace{-9mm}
+\begin{multicols}{3}
+\begin{itemize}[noitemsep,nolistsep]
+\item[] \underline{Professor Sofia Villas-Boas} \\
+\href{mailto:sberto@berkeley.edu}{sberto@berkeley.edu} \\
++1 (510) 409-4341 \\
+\item[] \underline{Professor Marco Gonzalez-Navarro} \\
+\href{mailto:marcog@berkeley.edu}{marcog@berkeley.edu} \\
++1 (510) 390-4720 \\
+\item[] \underline{Diana Lazo} \\
+\href{mailto:lazo@berkeley.edu}{lazo@berkeley.edu} \\
++1 (510) 642-3345 
+\end{itemize}
+\end{multicols}
+\end{minipage}\vspace{5mm}
+
+%%% PRIOR EDUCATION
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Education}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\begin{mysec} 
+    \textbf{Brigham Young University} \>\>\>\>\> BS Mathematics, Economics \` 2019 
+\end{mysec} 
+\end{minipage}\vspace{5mm}
+
+%%% TEACHING
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Teaching}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\begin{mysec} 
+\textbf{UC Berkeley} \>\>\>\>\>Teaching Assistant, \emph{International Trade}  \` 2025 \\
+\>\>\>\>\> Undergraduate
+\end{mysec}
+\begin{mysec} 
+\textbf{UC Berkeley} \>\>\>\>\>Teaching Assistant, \emph{Environmental Economics}  \` 2021, 2022 \\
+\>\>\>\>\> Undergraduate and Masters
+\end{mysec}
+\end{minipage}\vspace{5mm}
+
+%%% LANGUAGES
+% \begin{minipage}[t]{0.1\linewidth}
+% \textbf{Languages}
+% \end{minipage}\hspace{0.05\linewidth}
+% \begin{minipage}[t]{0.8\linewidth}
+% English (native), Spanish (fluent)
+% \end{minipage}\vspace{5mm}
+
+%%% GRANTS, FELLOWSHIPS, AWARDS
+% \begin{minipage}[t]{0.1\linewidth}
+% \textbf{Grants, Fellowships, and Awards}
+% \end{minipage}\hspace{0.05\linewidth}
+% \begin{minipage}[t]{0.8\linewidth}
+% \begin{mysec} 
+% 	2025 \>\>\tabfill{UC Dissertation Fellowship (\$37,000)} \\
+% \end{mysec} 
+% \end{minipage}\vspace{5mm}
+
+%%% RESEARCH PAPERS
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Resarch}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\textbf{``Freight in the Time of Covid: Quantifying A Model of US Trucking''\\ 
+(\textsc{Job Market Paper})}\\ 
+
+Trade models typically ignore the freight transportation industry. I develop a model of the US trucking industry that can replicate several stylized facts that I document, including the return-trip effect and spatial correlations in transportation prices, while remaining tractable enough to be embedded within a trade model and quantified using market-level data. Rather than being treated as fixed and exogenous, trade costs emerge endogenously as the market-clearing prices of the freight transportation industry. I quantify my model's key parameters using instruments based on Covid-era shocks to US container import quantities. Finally, I use a simple calibration of my spatial model to estimate how changes in freight transportation prices affected goods prices and consumer welfare following the onset of Covid.
+
+% \textbf{``Title.''} \emph{Revision requested by \emph{Journal}. Date YYYY.} \href{address}{\color{blue}{text}}. \\
+% Abstract
+\end{minipage}\vspace{5mm}
+
+
+%%% RESEARCH IN PROGRESS
+% \begin{minipage}[t]{0.1\linewidth}
+% \textbf{Research in Progress}
+% \end{minipage}\hspace{0.05\linewidth}
+% \begin{minipage}[t]{0.8\linewidth}
+% \textbf{``my title''} with coauthors \\ 
+
+% [ABSTRACT HERE ] \\ 
+
+
+% \end{minipage}
+
+%%% TALKS
+% \begin{minipage}[t]{0.1\linewidth}
+% \textbf{Talks}
+% \end{minipage}\hspace{0.05\linewidth}
+% \begin{minipage}[t]{0.8\linewidth}
+% \begin{mysec} 
+%     2023, 2024 \>\> \tabfill{UC Berkeley Trade workshop} \\
+% \end{mysec} 
+% \end{minipage}\vspace{5mm}
+
+%%% REFEREEING
+% \begin{minipage}[t]{0.1\linewidth}
+% \textbf{Refereeing}
+% \end{minipage}\hspace{0.05\linewidth}
+% \begin{minipage}[t]{0.8\linewidth}
+% \emph{Journal of Excellent Papers}
+% \end{minipage}\vspace{5mm}
+
+%%% ACTIVITIES
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Activities}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\begin{mysec}
+    2024 \>\> Graduate Admissions Committee \\
+    2022 \>\> Faculty Search Committee \\
+\end{mysec}
+\end{minipage}\vspace{5mm}
+
+
+%%% PRIOR EMPLOYMENT
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Prior \\ Employment}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\textbf{UC Berkeley}, Research Assistant (Kirill Borusyak) \hfill 2024-2025 \\
+\textbf{UC Berkeley}, Research Assistant (James Sallee) \hfill 2022, 2024 \\
+\textbf{UC Berkeley}, Research Assistant (David Zilberman) \hfill 2020-2021 \\
+\textbf{Brigham Young University}, Research Assistant (Arden Pope) \hfill 2017-2019 \\
+\end{minipage}\vspace{5mm}
+
+%%% ANY OTHER ITEMS
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Military \\ Service}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\textbf{US Marine Corps Reserve}, Logistics Officer \hfill 2022-Present \\
+Platoon Commander, Company Executive Officer
+\end{minipage}\vspace{5mm}
+
+
+\end{document}
