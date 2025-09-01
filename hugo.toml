@@ -1,0 +1,13 @@
+baseURL = "https://jacoblefler.github.io/"
+languageCode = "en-us"
+enableEmoji = true
+theme = "avicenna"
+title = "Jacob Lefler"
+
+[params]
+name = "Jacob Lefler"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
