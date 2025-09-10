@@ -1,6 +1,6 @@
-PWD c:\Users\jacob\Dropbox\JobMarket\CV
+PWD c:\Users\jacob\Documents\Website\jacoblefler.github.io\static
 INPUT C:\Users\jacob\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\jacob\Dropbox\JobMarket\CV\cv.tex
+INPUT c:\Users\jacob\Documents\Website\jacoblefler.github.io\static\cv.tex
 OUTPUT cv.log
 INPUT C:\Users\jacob\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\jacob\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
