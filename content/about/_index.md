@@ -7,7 +7,7 @@ full_name: "Jacob Lefler"
 
 #### CV
 
-* Download <a href="cv.pdf" target="_blank">here</a>.
+Download <a href="cv.pdf" target="_blank">here</a>.
 
 #### Education 
 
@@ -27,9 +27,9 @@ Trade models typically ignore the freight transportation industry. I develop a m
 
 #### Teaching - UC Berkeley
 
-* Undergraduate International Trade, 2025, (TA)
-* Undergraduate Environmental Economics, 2022, (TA)
-* Masters Environmental Economics, 2021, (TA)
+* Undergraduate International Trade, 2025 (TA)
+* Undergraduate Environmental Economics 2022, (TA)
+* Masters Environmental Economics, 2021 (TA)
 
 #### Military Service
 
