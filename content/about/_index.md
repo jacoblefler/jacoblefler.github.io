@@ -28,7 +28,7 @@ Trade models typically ignore the freight transportation industry. I develop a m
 #### Teaching - UC Berkeley
 
 * Undergraduate International Trade, 2025 (TA)
-* Undergraduate Environmental Economics 2022, (TA)
+* Undergraduate Environmental Economics, 2022 (TA)
 * Masters Environmental Economics, 2021 (TA)
 
 #### Military Service
