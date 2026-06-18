@@ -1,0 +1,16 @@
+open gitbash
+
+cd Documents/Website/jacoblefler.github.io
+
+git status
+
+git add .
+
+git commit -m "INSERT MESSAGE"
+
+git push origin master
+
+
+
+TO EDIT
+- make changes to content\about\_index

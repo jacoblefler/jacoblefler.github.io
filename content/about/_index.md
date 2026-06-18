@@ -11,7 +11,7 @@ Download <a href="cv.pdf" target="_blank">here</a>.
 
 #### Education 
 
-* PhD, UC Berkeley, Agricultural and Resource Economics (Expected May 2026)
+* PhD, UC Berkeley, Agricultural and Resource Economics, 2026
 * BS, Brigham Young University, Mathematics and Economics, 2019
 
 #### Fields
