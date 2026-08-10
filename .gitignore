@@ -1,0 +1,14 @@
+# LaTeX build artifacts -- only cv.tex and cv.pdf belong in the repo
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+
+# OS cruft
+.DS_Store
+Thumbs.db

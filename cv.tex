@@ -1,0 +1,129 @@
+%%% Jacob Lefler -- Curriculum Vitae
+%%%
+%%% Build:  latexmk -pdf cv.tex
+%%%
+%%% Layout: each section is one \cvsection{Label}{Body} call -- the label sits in a
+%%% narrow left column, the body in a wide right column. To add a section, copy an
+%%% existing \cvsection block. Within a body, \hfill pushes a date flush right.
+
+\documentclass[11pt, oneside]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+
+\usepackage{geometry}
+\geometry{letterpaper}
+\geometry{verbose, tmargin=2cm, bmargin=2cm, lmargin=2.2cm, rmargin=2.2cm}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=black, linkcolor=black}
+\urlstyle{same}
+
+%%% No first-line indents anywhere -- a CV has no running prose.
+\setlength{\parindent}{0pt}
+
+%%% One CV section: bold label on the left, content on the right.
+\newcommand{\cvsection}[2]{%
+  \par\noindent
+  \begin{minipage}[t]{0.15\linewidth}\raggedright\textbf{#1}\end{minipage}%
+  \hspace{0.03\linewidth}%
+  \begin{minipage}[t]{0.80\linewidth}\ignorespaces#2\unskip\end{minipage}%
+  \par\vspace{5.5mm}}
+
+%%% A line with a date flush right: \dated{what}{when}
+%%% Uses a fixed-width box so the date lands exactly on the right margin even when
+%%% it is the last line of a section (a bare \hfill there overhangs the margin).
+\newcommand{\dated}[2]{\leavevmode\hbox to \linewidth{#1\hfill #2}}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+%%% HEADER
+\begin{center}
+{\LARGE \textbf{Jacob Lefler}} \\[2.5mm]
+\href{mailto:jacob.lefler@usitc.gov}{jacob.lefler@usitc.gov}
+\quad $\cdot$ \quad
+\href{https://jacoblefler.github.io/}{jacoblefler.github.io}
+\end{center}
+\vspace{3mm}
+\hrule
+\vspace{6mm}
+
+%%% EMPLOYMENT
+\cvsection{Employment}{
+\dated{\textbf{U.S. International Trade Commission}}{2026--Present} \\
+Economist, Research Division
+}
+
+%%% EDUCATION
+\cvsection{Education}{
+\dated{\textbf{University of California, Berkeley}}{2026} \\
+PhD, Agricultural and Resource Economics \\[2mm]
+\dated{\textbf{Brigham Young University}}{2019} \\
+BS, Mathematics and Economics
+}
+
+%%% RESEARCH
+\cvsection{Research}{
+\textbf{``Freight in the Time of Covid: A Model of US Trucking''} \\[2mm]
+\textbf{``Transportation Prices and Agricultural Value Chains''}
+}
+
+%%% PUBLICATIONS
+\cvsection{Publications in Environmental Epidemiology}{
+\textbf{JS Lefler}, JD Higbee, RT Burnett, M Ezzati, NC Coleman, DD Mann, JD Marshall,
+M Bechle, Y Wang, AL Robinson, CA Pope, ``Air pollution and mortality in a large,
+representative US cohort: multiple-pollutant analyses, and spatial and temporal
+decompositions,'' \textit{Environmental Health} (2019) \\[2mm]
+CA Pope, \textbf{JS Lefler}, M Ezzati, JD Higbee, JD Marshall, SY Kim, M Bechle,
+KS Gilliat, SE Vernon, AL Robinson, RT Burnett, ``Mortality risk and fine particulate
+air pollution in a large, representative cohort of US adults,''
+\textit{Environmental Health Perspectives} (2019) \\[2mm]
+BE Horne, EA Joy, MG Hofmann, PG Gesteland, JB Cannon, \textbf{JS Lefler}, DP Blagev,
+EK Korgenski, N Torosyan, GI Hansen, D Kartchner, CA Pope, ``Short-term elevation of
+fine particulate matter air pollution and acute lower respiratory infection,''
+\textit{American Journal of Respiratory and Critical Care Medicine} (2018)
+}
+
+%%% TEACHING
+\cvsection{Teaching}{
+\textbf{University of California, Berkeley}, Teaching Assistant \\[1.5mm]
+\dated{\emph{Principles of Economics}, Undergraduate}{Spring 2026} \\
+\dated{\emph{International Trade}, Undergraduate}{2025} \\
+\dated{\emph{Environmental Economics}, Undergraduate and Masters}{2021, 2022}
+}
+
+%%% PROFESSIONAL ACTIVITIES
+\cvsection{Professional Activities}{
+\dated{Graduate Admissions Committee, UC Berkeley}{2024} \\
+\dated{Faculty Search Committee, UC Berkeley}{2022}
+}
+
+%%% MILITARY SERVICE
+\cvsection{Military Service}{
+\dated{\textbf{U.S. Marine Corps Reserve}, Logistics Officer}{2022--Present} \\
+Platoon Commander, Company Executive Officer
+}
+
+%%% ---------------------------------------------------------------------------
+%%% Optional sections -- uncomment and edit as needed.
+%%% ---------------------------------------------------------------------------
+
+% \cvsection{Grants and Awards}{
+% UC Dissertation Fellowship (\$37,000) \hfill 2025
+% }
+
+% \cvsection{Talks}{
+% UC Berkeley Trade Workshop \hfill 2023, 2024
+% }
+
+% \cvsection{Refereeing}{
+% \emph{Journal of Excellent Papers}
+% }
+
+% \cvsection{Languages}{
+% English (native), Spanish (fluent)
+% }
+
+\end{document}
