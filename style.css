@@ -121,6 +121,15 @@ ul.research li {
   padding: 0.45rem 0;
 }
 
+/* Status line under a paper title, e.g. "Updated draft coming soon".
+   For the note on the same line as the title instead, change display to `inline`
+   and add:  .note::before { content: "\2014\00a0"; }  */
+.note {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
 .year {
   color: var(--muted);
   font-size: 0.9375rem;
